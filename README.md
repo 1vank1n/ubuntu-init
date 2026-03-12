@@ -14,7 +14,7 @@
 ## Быстрый старт
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/1vank1n/ubuntu-init/main/ubuntu-init.sh | sudo bash
+curl -fsSL curl -fsSL https://github.com/1vank1n/ubuntu-init/releases/latest/download/ubuntu-init.sh | sudo bash
 ```
 
 Скрипт задаст интерактивные вопросы (имя пользователя, SSH‑порт, ключ и т.д.), покажет сводку параметров и попросит подтверждение перед применением.
@@ -22,7 +22,7 @@ curl -fsSL https://raw.githubusercontent.com/1vank1n/ubuntu-init/main/ubuntu-ini
 ## Или вручную
 
 ```bash
-wget https://raw.githubusercontent.com/1vank1n/ubuntu-init/main/ubuntu-init.sh
+wget curl -fsSL https://github.com/1vank1n/ubuntu-init/releases/latest/download/ubuntu-init.sh
 chmod +x ubuntu-init.sh
 sudo ./ubuntu-init.sh
 ```
