@@ -26,7 +26,7 @@ if [[ ! -t 0 ]]; then
     TMPSCRIPT=$(mktemp /tmp/ubuntu-init.XXXXXX.sh)
     cat > "$TMPSCRIPT"
     chmod +x "$TMPSCRIPT"
-    exec bash "$TMPSCRIPT"
+    exec bash "$TMPSCRIPT" < /dev/tty
 fi
 
 # --- Цвета и утилиты --------------------------------------------------------
