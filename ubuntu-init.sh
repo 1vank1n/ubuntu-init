@@ -198,7 +198,7 @@ fi
 
 # Проверяем конфиг перед перезапуском
 if sshd -t 2>/dev/null; then
-    systemctl restart sshd
+    systemctl restart ssh
     success "SSH настроен и перезапущен (порт $SSH_PORT)."
 else
     error "Ошибка в sshd_config! Восстановите из бэкапа: $SSHD_BACKUP"
